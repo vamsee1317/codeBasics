@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Core Components of HTML</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    header {
+      background: #4a90e2;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      width: 85%;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a90e2;
+      border-left: 5px solid #4a90e2;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .box {
+      background: #eef5ff;
+      padding: 15px 20px;
+      border-left: 4px solid #4a90e2;
+      margin: 10px 0;
+      border-radius: 6px;
+    }
+
+    code {
+      background: #dfe9ff;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<header>Core Components of HTML</header>
+
+<div class="container">
+
+  <!-- TAGS -->
+  <h2>HTML Tags</h2>
+  <div class="box">
+    <p><strong>Tags</strong> are predefined keywords written inside angle brackets <code>&lt; &gt;</code>.  
+       Tags tell the browser how to display or structure content on a webpage.</p>
+    
+    <p><strong>General Syntax:</strong></p>
+    <code>&lt;tagname&gt; Content &lt;/tagname&gt;</code>
+
+    <p><strong>Types of Tags:</strong></p>
+    <ul>
+      <li><strong>Paired / Container Tags:</strong> have both opening and closing tags.  
+        <br>Example: <code>&lt;p&gt;...&lt;/p&gt;</code>
+      </li>
+
+      <li><strong>Single / Self-Closing Tags:</strong> do not have a closing tag.  
+        <br>Example: <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>
+      </li>
+
+      <li><strong>Block-Level Tags:</strong> start on a new line and take full width.  
+        <br>Example: <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>
+      </li>
+
+      <li><strong>Inline Tags:</strong> do not start on a new line and take only required space.  
+        <br>Example: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code;&lt;strong&gt;</code>
+      </li>
+
+      <li><strong>Inline-Block Tags:</strong> behave like inline, but allow width/height.  
+        <br>Example: <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ATTRIBUTES -->
+  <h2>HTML Attributes</h2>
+  <div class="box">
+    <p><strong>Attributes</strong> provide extra information about an HTML tag.  
+       They modify the behavior, appearance, or functionality of an element.</p>
+
+    <p><strong>General Syntax:</strong></p>
+    <code>&lt;tagname attribute="value"&gt; Content &lt;/tagname&gt;</code>
+
+    <p><strong>Types of Attributes:</strong></p>
+    <ul>
+      <li><strong>Global Attributes:</strong> usable with any HTML tag.  
+        <br>Examples: <code>id</code>, <code>class</code>, <code>style</code>, <code>title</code>
+      </li>
+
+      <li><strong>Element-Specific Attributes:</strong> applicable only to certain tags.  
+        <br>Examples:
+        <ul>
+          <li><code>href</code> → <code>&lt;a&gt;</code></li>
+          <li><code>src</code>, <code>alt</code> → <code>&lt;img&gt;</code></li>
+          <li><code>type</code>, <code>value</code> → <code>&lt;input&gt;</code></li>
+        </ul>
+      </li>
+
+      <li><strong>Boolean Attributes:</strong> true when present, false when absent.  
+        <br>Examples: <code>disabled</code>, <code>checked</code>, <code>required</code>
+      </li>
+
+      <li><strong>Style Attributes:</strong> inline CSS for appearance.  
+        <br>Example: <code>&lt;p style="color:red;"&gt;</code>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ELEMENTS -->
+  <h2>HTML Elements</h2>
+  <div class="box">
+    <p><strong>Elements</strong> are the complete structure formed by an HTML tag, its content, and closing tag.</p>
+
+    <p><strong>General Syntax:</strong></p>
+    <code>&lt;tagname attribute="value"&gt; Content &lt;/tagname&gt;</code>
+
+    <p><strong>Types of Elements:</strong></p>
+    <ul>
+      <li><strong>Block-Level Elements:</strong> occupy full width.  
+        <br>Example: <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>
+      </li>
+
+      <li><strong>Inline Elements:</strong> occupy only the needed width.  
+        <br>Example: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>
+      </li>
+
+      <li><strong>Inline-Block Elements:</strong> have inline flow but allow dimensions.  
+        <br>Example: <code>&lt;img&gt;</code>, <code>&lt;button&gt;</code>
+      </li>
+
+      <li><strong>Empty Elements:</strong> no closing tag, no content.  
+        <br>Example: <code>&lt;br&gt;</code>, <code>&lt;img&gt;</code>
+      </li>
+
+      <li><strong>Nested Elements:</strong> elements inside another element.  
+        <br>Example:  
+        <code>&lt;p&gt;This is &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;</code>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
