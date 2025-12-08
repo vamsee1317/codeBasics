@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    header {
+      background: #4a90e2;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 85%;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a90e2;
+      border-left: 5px solid #4a90e2;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    .box {
+      background: #eef5ff;
+      padding: 15px 20px;
+      border-left: 4px solid #4a90e2;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #888;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    code {
+      background: #dfe9ff;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<header>HTML Tables – Syntax, Example & Real-Time Use Cases</header>
+
+<div class="container">
+
+  <!-- WHAT ARE TABLES -->
+  <h2>What Are HTML Tables?</h2>
+  <div class="box">
+    <p><strong>HTML Tables</strong> are used to display data in rows and columns, forming a structured grid format.  
+       They are useful for showing information that naturally fits into a tabular layout.</p>
+
+    <p><strong>Main Table Tags:</strong></p>
+    <ul>
+      <li><code>&lt;table&gt;</code> – Main table wrapper</li>
+      <li><code>&lt;tr&gt;</code> – Table Row</li>
+      <li><code>&lt;th&gt;</code> – Header Cell (bold + centered by default)</li>
+      <li><code>&lt;td&gt;</code> – Data Cell</li>
+      <li><code>&lt;thead&gt;</code> – Group of header rows</li>
+      <li><code>&lt;tbody&gt;</code> – Group of body rows</li>
+      <li><code>&lt;tfoot&gt;</code> – Footer rows</li>
+      <li><code>&lt;caption&gt;</code> – Table title</li>
+    </ul>
+  </div>
+
+  <!-- SYNTAX -->
+  <h2>HTML Table Syntax</h2>
+  <div class="box">
+    <p><strong>Basic Syntax:</strong></p>
+    <code>
+      &lt;table&gt;<br>
+      &nbsp;&nbsp;&lt;tr&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header&lt;/th&gt;<br>
+      &nbsp;&nbsp;&lt;/tr&gt;<br>
+      &nbsp;&nbsp;&lt;tr&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data&lt;/td&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data&lt;/td&gt;<br>
+      &nbsp;&nbsp;&lt;/tr&gt;<br>
+      &lt;/table&gt;
+    </code>
+  </div>
+
+  <!-- BASIC CODE EXAMPLE -->
+  <h2>Basic Table Example</h2>
+  <div class="box">
+    <p>Here is a simple product table:</p>
+
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Category</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Laptop</td>
+        <td>Electronics</td>
+        <td>$899</td>
+      </tr>
+      <tr>
+        <td>Sofa</td>
+        <td>Furniture</td>
+        <td>$499</td>
+      </tr>
+      <tr>
+        <td>Wrist Watch</td>
+        <td>Fashion</td>
+        <td>$199</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- REAL TIME USE CASES -->
+  <h2>Real-Time Use Cases of Tables</h2>
+  <div class="box">
+    <p>HTML tables are commonly used in many web applications and dashboards. Some examples:</p>
+
+    <ul>
+      <li><strong>eCommerce Admin Panels:</strong> Product lists, order history, customer details</li>
+      <li><strong>School/College Portals:</strong> Timetables, marksheets, attendance records</li>
+      <li><strong>Finance Dashboards:</strong> Transaction history, profit–loss sheets</li>
+      <li><strong>HR Systems:</strong> Employee records, payroll data</li>
+      <li><strong>Hospital Management:</strong> Patient records, doctor schedules</li>
+      <li><strong>Travel Websites:</strong> Flight schedules, booking details</li>
+      <li><strong>Restaurant POS Systems:</strong> Menu pricing, daily sales</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
