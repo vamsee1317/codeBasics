@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Tags & Usages</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    header {
+      background: #4a90e2;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      width: 85%;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a90e2;
+      border-left: 5px solid #4a90e2;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .box {
+      background: #eef5ff;
+      padding: 15px 20px;
+      border-left: 4px solid #4a90e2;
+      margin: 10px 0;
+      border-radius: 6px;
+    }
+
+    code {
+      background: #dfe9ff;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<header>HTML Tags – Definitions & Usages</header>
+
+<div class="container">
+
+  <!-- TYPOGRAPHY -->
+  <h2>Typography Tags</h2>
+  <div class="box">
+    <p>Typography tags define text formatting, headings, emphasis, and inline styling.</p>
+    <ul>
+      <li><strong>&lt;h1&gt; – &lt;h6&gt;</strong> : Defines headings from highest to lowest priority  
+        Usage: <code>&lt;h1&gt;Page Title&lt;/h1&gt;</code></li>
+
+      <li><strong>&lt;p&gt;</strong> : Defines a paragraph  
+        Usage: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></li>
+
+      <li><strong>&lt;br&gt;</strong> : Inserts a line break</li>
+
+      <li><strong>&lt;strong&gt;</strong> : Strong importance (bold)  
+        Usage: <code>&lt;strong&gt;Important&lt;/strong&gt;</code></li>
+
+      <li><strong>&lt;em&gt;</strong> : Emphasized text (italic)  
+        Usage: <code>&lt;em&gt;Note&lt;/em&gt;</code></li>
+
+      <li><strong>&lt;span&gt;</strong> : Inline text container  
+        Usage: <code>&lt;span style="color:red"&gt;Red Text&lt;/span&gt;</code></li>
+
+      <li><strong>&lt;mark&gt;</strong> : Highlights text  
+        Usage: <code>&lt;mark&gt;Highlight&lt;/mark&gt;</code></li>
+
+      <li><strong>&lt;blockquote&gt;</strong> : For long quotations</li>
+
+      <li><strong>&lt;code&gt;</strong> : Displays inline code</li>
+
+      <li><strong>&lt;pre&gt;</strong> : Preformatted text block</li>
+    </ul>
+  </div>
+
+  <!-- LAYOUT TAGS -->
+  <h2>Layout & Structure Tags</h2>
+  <div class="box">
+    <p>These tags define webpage layout, structure, and container sections.</p>
+    <ul>
+      <li><strong>&lt;div&gt;</strong> : Generic block container  
+        Usage: <code>&lt;div&gt;Content&lt;/div&gt;</code></li>
+
+      <li><strong>&lt;section&gt;</strong> : Groups related content</li>
+
+      <li><strong>&lt;article&gt;</strong> : Independent content piece (blogs, posts)</li>
+
+      <li><strong>&lt;header&gt;</strong> : Header area of page or section</li>
+
+      <li><strong>&lt;footer&gt;</strong> : Footer area</li>
+
+      <li><strong>&lt;nav&gt;</strong> : Navigation links block</li>
+
+      <li><strong>&lt;aside&gt;</strong> : Sidebar content</li>
+
+      <li><strong>&lt;main&gt;</strong> : Main content region</li>
+
+      <li><strong>&lt;span&gt;</strong> : Inline layout wrapper</li>
+    </ul>
+  </div>
+
+  <!-- LIST TAGS -->
+  <h2>List Tags</h2>
+  <div class="box">
+    <p>HTML provides several list formats: ordered, unordered, and descriptive.</p>
+    <ul>
+      <li><strong>&lt;ul&gt;</strong> : Unordered list (bullets)  
+        Usage: <code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></li>
+
+      <li><strong>&lt;ol&gt;</strong> : Ordered list (numbers)</li>
+
+      <li><strong>&lt;li&gt;</strong> : A list item</li>
+
+      <li><strong>&lt;dl&gt;</strong> : Description list</li>
+
+      <li><strong>&lt;dt&gt;</strong> : Term</li>
+
+      <li><strong>&lt;dd&gt;</strong> : Description</li>
+    </ul>
+  </div>
+
+  <!-- MEDIA TAGS -->
+  <h2>Media Tags</h2>
+  <div class="box">
+    <p>Used to embed images, audio, video, and graphics.</p>
+    <ul>
+      <li><strong>&lt;img&gt;</strong> : Embeds an image  
+        Usage: <code>&lt;img src="photo.jpg" alt="Image"&gt;</code></li>
+
+      <li><strong>&lt;audio&gt;</strong> : Embeds sound/audio</li>
+
+      <li><strong>&lt;video&gt;</strong> : Embeds a video</li>
+
+      <li><strong>&lt;source&gt;</strong> : Defines media file source</li>
+
+      <li><strong>&lt;canvas&gt;</strong> : Draw graphics with JS</li>
+
+      <li><strong>&lt;iframe&gt;</strong> : Embeds external page/video</li>
+    </ul>
+  </div>
+
+  <!-- TABLE TAGS -->
+  <h2>Table Tags</h2>
+  <div class="box">
+    <p>Tags used to create tables and tabular data.</p>
+    <ul>
+      <li><strong>&lt;table&gt;</strong> : Table container</li>
+      <li><strong>&lt;tr&gt;</strong> : Table row</li>
+      <li><strong>&lt;th&gt;</strong> : Table header cell</li>
+      <li><strong>&lt;td&gt;</strong> : Table data cell</li>
+      <li><strong>&lt;thead&gt;</strong> : Table header group</li>
+      <li><strong>&lt;tbody&gt;</strong> : Body content group</li>
+      <li><strong>&lt;tfoot&gt;</strong> : Footer group</li>
+      <li><strong>&lt;caption&gt;</strong> : Table title</li>
+    </ul>
+  </div>
+
+  <!-- FORM TAGS -->
+  <h2>Form & Input Tags</h2>
+  <div class="box">
+    <p>Form tags allow capturing user data and sending it to servers.</p>
+    <ul>
+      <li><strong>&lt;form&gt;</strong> : Form container  
+        Usage: <code>&lt;form action="" method=""&gt;&lt;/form&gt;</code></li>
+
+      <li><strong>&lt;input&gt;</strong> : Multi-purpose input field  
+        Types: text, email, password, number, checkbox, radio, etc.</li>
+
+      <li><strong>&lt;label&gt;</strong> : Text label for input</li>
+
+      <li><strong>&lt;textarea&gt;</strong> : Multi-line text box</li>
+
+      <li><strong>&lt;select&gt;</strong> : Dropdown list</li>
+
+      <li><strong>&lt;option&gt;</strong> : Item inside dropdown</li>
+
+      <li><strong>&lt;button&gt;</strong> : Clickable button</li>
+
+      <li><strong>&lt;fieldset&gt;</strong> : Groups form fields</li>
+
+      <li><strong>&lt;legend&gt;</strong> : Label for fieldset</li>
+    </ul>
+  </div>
+
+  <!-- INTERACTIVE TAGS -->
+  <h2>Interactive & Advanced Tags</h2>
+  <div class="box">
+    <p>Used for collapsible content, dialogs, and interactive widgets.</p>
+    <ul>
+      <li><strong>&lt;details&gt;</strong> : Expandable/collapsible section</li>
+      <li><strong>&lt;summary&gt;</strong> : Caption for details</li>
+      <li><strong>&lt;dialog&gt;</strong> : Dialog box / popup</li>
+      <li><strong>&lt;progress&gt;</strong> : Progress bar</li>
+      <li><strong>&lt;meter&gt;</strong> : Gauge/measurement scale</li>
+    </ul>
+  </div>
+
+  <!-- METADATA TAGS -->
+  <h2>Metadata & Head Tags</h2>
+  <div class="box">
+    <p>These tags define additional information about the document.</p>
+    <ul>
+      <li><strong>&lt;title&gt;</strong> : Page title shown in browser tab</li>
+      <li><strong>&lt;meta&gt;</strong> : Metadata (SEO, charset, author)</li>
+      <li><strong>&lt;link&gt;</strong> : Links external resources (CSS)</li>
+      <li><strong>&lt;script&gt;</strong> : Embeds JavaScript</li>
+      <li><strong>&lt;style&gt;</strong> : Internal CSS</li>
+      <li><strong>&lt;base&gt;</strong> : Base URL for links</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
