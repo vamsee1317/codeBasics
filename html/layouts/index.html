@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Layouts – HTML4 & HTML5</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    header {
+      background: #4a90e2;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 85%;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a90e2;
+      border-left: 5px solid #4a90e2;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    .box {
+      background: #eef5ff;
+      padding: 15px 20px;
+      border-left: 4px solid #4a90e2;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+
+    code {
+      background: #dfe9ff;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+<header>HTML Layouts – HTML4 vs HTML5</header>
+
+<div class="container">
+
+  <!-- INTRO -->
+  <h2>What Is a Layout in HTML?</h2>
+  <div class="box">
+    <p>An HTML <strong>layout</strong> defines how different parts of a webpage are arranged, such as header, sidebar, content area, and footer.  
+       Layouts help structure content for readability and responsiveness.</p>
+  </div>
+
+  <!-- HTML4 LAYOUTS -->
+  <h2>HTML4 Layout System</h2>
+  <div class="box">
+    <p>HTML4 did not have built-in layout tags. Developers mainly created layouts using:</p>
+    <ul>
+      <li><strong>&lt;div&gt; tags</strong> with <code>id</code> and <code>class</code></li>
+      <li><strong>Table layouts</strong> (old, outdated method)</li>
+      <li><strong>Floats</strong> in CSS to create columns</li>
+    </ul>
+
+    <p>This method worked, but it lacked semantic meaning and accessibility.</p>
+  </div>
+
+  <!-- HTML4 SYNTAX -->
+  <h2>HTML4 Layout Example using &lt;div&gt;</h2>
+  <div class="box">
+    <pre>
+&lt;div id="header"&gt;Header&lt;/div&gt;
+&lt;div id="nav"&gt;Navigation&lt;/div&gt;
+&lt;div id="content"&gt;Main Content&lt;/div&gt;
+&lt;div id="sidebar"&gt;Sidebar&lt;/div&gt;
+&lt;div id="footer"&gt;Footer&lt;/div&gt;
+    </pre>
+  </div>
+
+  <h2>Limitations of HTML4 Layouts</h2>
+  <div class="box">
+    <ul>
+      <li>No semantic meaning → Not SEO-friendly</li>
+      <li>Difficult to understand structure by reading code</li>
+      <li>Not screen-reader friendly</li>
+      <li>Tables made markup heavy and rigid</li>
+      <li>CSS floats were hard to manage</li>
+    </ul>
+  </div>
+
+  <!-- HTML5 LAYOUTS -->
+  <h2>HTML5 Semantic Layout System</h2>
+  <div class="box">
+    <p>HTML5 introduced <strong>semantic layout tags</strong> that describe the purpose of content, making pages more readable and SEO-friendly.</p>
+
+    <p><strong>Main HTML5 Layout Tags:</strong></p>
+    <ul>
+      <li><strong>&lt;header&gt;</strong> → Top section / branding</li>
+      <li><strong>&lt;nav&gt;</strong> → Navigation links</li>
+      <li><strong>&lt;section&gt;</strong> → Logical grouping of content</li>
+      <li><strong>&lt;article&gt;</strong> → Independent content (blog/news)</li>
+      <li><strong>&lt;aside&gt;</strong> → Sidebar or related info</li>
+      <li><strong>&lt;main&gt;</strong> → Main content area</li>
+      <li><strong>&lt;footer&gt;</strong> → Bottom section</li>
+    </ul>
+
+    <p>These tags make layouts clearer and improve accessibility & SEO.</p>
+  </div>
+
+  <!-- HTML5 EXAMPLE -->
+  <h2>HTML5 Layout Example</h2>
+  <div class="box">
+    <pre>
+&lt;header&gt;Website Header&lt;/header&gt;
+
+&lt;nav&gt;
+  &lt;a href="#"&gt;Home&lt;/a&gt;
+  &lt;a href="#"&gt;About&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+  &lt;section&gt;
+    &lt;article&gt;
+      &lt;h2&gt;Blog Title&lt;/h2&gt;
+      &lt;p&gt;Blog content here...&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+
+  &lt;aside&gt;Sidebar Content&lt;/aside&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;Footer Info&lt;/footer&gt;
+    </pre>
+  </div>
+
+  <!-- REAL TIME USE CASES -->
+  <h2>Real-Time Use Cases of HTML Layouts</h2>
+  <div class="box">
+    <ul>
+      <li><strong>Business Websites:</strong> Clearly separated header, navbar, content, and footer</li>
+      <li><strong>Blogs & Articles:</strong> Using <code>&lt;article&gt;</code> for each post</li>
+      <li><strong>News Portals:</strong> Multiple <code>&lt;section&gt;</code> blocks for categories</li>
+      <li><strong>eCommerce Websites:</strong> Sidebars created using <code>&lt;aside&gt;</code></li>
+      <li><strong>Admin Dashboards:</strong> Structured layouts for navigation & content panels</li>
+      <li><strong>Portfolio Websites:</strong> Clean, accessible semantic layout improves SEO</li>
+      <li><strong>Learning Platforms:</strong> Organized modules & menus using semantic tags</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
