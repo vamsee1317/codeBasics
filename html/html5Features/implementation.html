@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Features – Implementation Examples</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #4a90e2;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 85%;
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a90e2;
+      border-left: 5px solid #4a90e2;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    .box {
+      background: #eef5ff;
+      border-left: 4px solid #4a90e2;
+      padding: 15px;
+      border-radius: 6px;
+      margin: 15px 0;
+    }
+
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 12px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+<header>HTML5 Features – Implementation</header>
+
+<div class="container">
+
+  <h2>1. Semantic Tags Implementation</h2>
+  <div class="box">
+    <pre>
+&lt;header&gt;My Website Header&lt;/header&gt;
+&lt;nav&gt;Home | About | Contact&lt;/nav&gt;
+
+&lt;main&gt;
+  &lt;section&gt;
+    &lt;article&gt;
+      &lt;h2&gt;Blog Title&lt;/h2&gt;
+      &lt;p&gt;This is a blog post example.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+
+  &lt;aside&gt;Sidebar Content&lt;/aside&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;© 2025 My Website&lt;/footer&gt;
+    </pre>
+  </div>
+
+  <h2>2. Audio & Video</h2>
+  <div class="box">
+    <pre>
+&lt;audio controls&gt;
+  &lt;source src="song.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+
+&lt;video width="320" height="240" controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+    </pre>
+  </div>
+
+  <h2>3. Canvas Example</h2>
+  <div class="box">
+    <pre>
+&lt;canvas id="myCanvas" width="200" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+  const c = document.getElementById("myCanvas");
+  const ctx = c.getContext("2d");
+  ctx.fillStyle = "blue";
+  ctx.fillRect(20, 20, 150, 100);
+&lt;/script&gt;
+    </pre>
+  </div>
+
+  <h2>4. HTML5 Form Enhancements</h2>
+  <div class="box">
+    <pre>
+&lt;form&gt;
+  Email: &lt;input type="email" required&gt;&lt;br&gt;
+  Date: &lt;input type="date"&gt;&lt;br&gt;
+  URL: &lt;input type="url"&gt;&lt;br&gt;
+  Range: &lt;input type="range" min="0" max="100"&gt;
+&lt;/form&gt;
+    </pre>
+  </div>
+
+  <h2>5. Local Storage Example</h2>
+  <div class="box">
+    <pre>
+&lt;script&gt;
+  localStorage.setItem("user", "Vamsi");
+  console.log(localStorage.getItem("user"));
+&lt;/script&gt;
+    </pre>
+  </div>
+
+  <h2>6. Geolocation Example</h2>
+  <div class="box">
+    <pre>
+&lt;script&gt;
+navigator.geolocation.getCurrentPosition((pos) =&gt; {
+  console.log(pos.coords.latitude, pos.coords.longitude);
+});
+&lt;/script&gt;
+    </pre>
+  </div>
+
+  <h2>7. Drag & Drop Example</h2>
+  <div class="box">
+    <pre>
+&lt;div draggable="true"&gt;Drag Me&lt;/div&gt;
+    </pre>
+  </div>
+
+</div>
+
+</body>
+</html>
