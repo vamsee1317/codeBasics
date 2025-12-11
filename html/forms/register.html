@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form – Complete HTML Example</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    header {
+      background: #4a90e2;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 85%;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a90e2;
+      border-left: 5px solid #4a90e2;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    .box {
+      background: #eef5ff;
+      padding: 15px 20px;
+      border-left: 4px solid #4a90e2;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+
+    code {
+      background: #dfe9ff;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+
+    /* Production-style form fields */
+    .form-wrapper {
+      max-width: 750px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .form-inline-group {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .radio-group, .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      font-size: 15px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: none;
+      background: #4a90e2;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #3b7bc0;
+    }
+
+    .btn-secondary {
+      background: #666 !important;
+    }
+  </style>
+</head>
+<body>
+
+<header>Registration Form – All Input Types</header>
+
+<div class="container">
+
+  <!-- INTRO -->
+  <h2>What is a Registration Form?</h2>
+  <div class="box">
+    <p>A <strong>registration form</strong> collects user information such as name, email, password, gender, skills, address, etc., and sends it to a server for processing.</p>
+  </div>
+
+  <!-- ACTION & METHOD -->
+  <h2>Understanding <code>action</code> & <code>method</code></h2>
+  <div class="box">
+    <p><strong>action:</strong> Specifies WHERE the form data should be sent.</p>
+    <p>Example: <code>action="/register"</code> → sends form data to server route "/register"</p>
+
+    <p><strong>method:</strong> Specifies HOW data is sent to the server.</p>
+
+    <ul>
+      <li><strong>GET</strong>  
+        <ul>
+          <li>Appends data in URL</li>
+          <li>Used for search bars, filters</li>
+          <li>Not secure</li>
+        </ul>
+      </li>
+
+      <li><strong>POST</strong>  
+        <ul>
+          <li>Sends data securely in background</li>
+          <li>Used for login, registration, payments</li>
+          <li>More secure & recommended</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- FORM TITLE -->
+  <h2>Complete Registration Form Example</h2>
+
+  <!-- FORM BLOCK -->
+  <div class="box">
+    <form action="/register" method="POST" class="form-wrapper">
+
+      <!-- Full Name -->
+      <div class="form-group">
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter full name" required>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" placeholder="Enter email" required>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label>Password:</label>
+        <input type="password" placeholder="Create password" required>
+      </div>
+
+      <!-- Phone -->
+      <div class="form-group">
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Enter mobile number">
+      </div>
+
+      <!-- Username -->
+      <div class="form-group">
+        <label>Username:</label>
+        <input type="text" placeholder="Choose a username">
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="form-inline-group">
+          <label><input type="radio" name="gender"> Male</label>
+          <label><input type="radio" name="gender"> Female</label>
+          <label><input type="radio" name="gender"> Other</label>
+        </div>
+      </div>
+
+      <!-- Country -->
+      <div class="form-group">
+        <label>Country:</label>
+        <select>
+          <option>India</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>Australia</option>
+        </select>
+      </div>
+
+      <!-- Skills -->
+      <div class="form-group">
+        <label>Skills:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox"> HTML</label>
+          <label><input type="checkbox"> CSS</label>
+          <label><input type="checkbox"> JavaScript</label>
+          <label><input type="checkbox"> React</label>
+        </div>
+      </div>
+
+      <!-- File Upload -->
+      <div class="form-group">
+        <label>Upload Profile Picture:</label>
+        <input type="file">
+      </div>
+
+      <!-- DOB -->
+      <div class="form-group">
+        <label>Date of Birth:</label>
+        <input type="date">
+      </div>
+
+      <!-- Time Preference -->
+      <div class="form-group">
+        <label>Preferred Time Slot:</label>
+        <input type="time">
+      </div>
+
+      <!-- Experience -->
+      <div class="form-group">
+        <label>Experience (0 to 10 years):</label>
+        <input type="range" min="0" max="10">
+      </div>
+
+      <!-- Address -->
+      <div class="form-group">
+        <label>Address:</label>
+        <textarea rows="4" placeholder="Enter your address"></textarea>
+      </div>
+
+      <!-- Buttons -->
+      <button type="submit">Register</button>
+      <button type="reset" class="btn-secondary">Reset</button>
+
+    </form>
+  </div>
+
+  <!-- REAL TIME USE CASES -->
+  <h2>Real-Time Use Cases</h2>
+  <div class="box">
+    <ul>
+      <li><strong>User Registration</strong> – Social media, eCommerce, job portals</li>
+      <li><strong>Student Enrollment Forms</strong></li>
+      <li><strong>Job Application Forms</strong></li>
+      <li><strong>Event Registration</strong> – Workshops, webinars</li>
+      <li><strong>Bank Account Opening Forms</strong></li>
+      <li><strong>Subscription / Membership Forms</strong></li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
