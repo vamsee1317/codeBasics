@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="main-header" class="site-header">
+        <h1 class="site-title">CSS Selectors Practice Page</h1>
+        <p class="tagline">Learn and test basic CSS selectors</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav id="main-nav" class="navigation">
+        <ul>
+            <li>
+                <a href="#home" class="nav-link" target="_self">Home</a>
+            </li>
+            <li>
+                <a href="#articles" class="nav-link" target="_blank">Articles</a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-link special-link" data-type="external">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="content">
+
+        <!-- Article Section -->
+        <section id="articles" class="articles-section">
+
+            <article id="article-1" class="article tech featured">
+                <h2 class="article-title">Tech Article</h2>
+                <p class="article-text">This is a technology-related article.</p>
+            </article>
+
+            <article id="article-2" class="article lifestyle">
+                <h2 class="article-title">Lifestyle Article</h2>
+                <p class="article-text">This article talks about lifestyle topics.</p>
+            </article>
+
+            <article id="article-3" class="article news">
+                <h2 class="article-title">News Article</h2>
+                <p class="article-text highlight">Latest news and updates are covered here.</p>
+            </article>
+
+                        <article id="article-4" class="article news">
+                <h2 class="article-title">Social Article</h2>
+                <p class="article-text highlight">Latest news and updates are covered here.</p>
+            </article>
+
+        </section>
+
+        <!-- Form Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+
+            <form id="contact-form" class="form">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="username" 
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="useremail" 
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <input 
+                        type="text" 
+                        id="role" 
+                        name="userrole" 
+                        data-role="student"
+                    >
+                </div>
+
+                <button type="submit" class="btn submit-btn">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="main-footer" class="site-footer">
+        <p>&copy; 2025 CSS Practice Site</p>
+        <a href="#top" class="footer-link">Back to Top</a>
+    </footer>
+
+</body>
+</html>
