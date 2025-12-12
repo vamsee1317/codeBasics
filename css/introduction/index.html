@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Introduction</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    header {
+      background: #4a90e2;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 85%;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a90e2;
+      border-left: 5px solid #4a90e2;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+
+    .box {
+      background: #eef5ff;
+      border-left: 4px solid #4a90e2;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+
+    code {
+      background: #dfe9ff;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<header>CSS Introduction – Concept Understanding</header>
+
+<div class="container">
+
+  <h2>What is CSS?</h2>
+  <div class="box">
+    <p><strong>CSS (Cascading Style Sheets)</strong> is used to control the appearance and layout of HTML elements.</p>
+    <p>HTML defines the structure, while CSS defines:</p>
+    <ul>
+      <li>Colors</li>
+      <li>Fonts</li>
+      <li>Spacing</li>
+      <li>Layouts</li>
+      <li>Animations & responsiveness</li>
+    </ul>
+  </div>
+
+  <h2>Why CSS is Required?</h2>
+  <div class="box">
+    <ul>
+      <li>Separates content from design</li>
+      <li>Makes websites visually appealing</li>
+      <li>Improves maintainability</li>
+      <li>Enables responsive design</li>
+      <li>Reduces code duplication</li>
+    </ul>
+  </div>
+
+  <h2>What Does "Cascading" Mean?</h2>
+  <div class="box">
+    <p><strong>Cascading</strong> means CSS follows a priority order when multiple styles apply to the same element.</p>
+    <p>The browser decides which rule to apply based on:</p>
+    <ul>
+      <li>Style source (inline, internal, external)</li>
+      <li>Specificity</li>
+      <li>Order of declaration</li>
+    </ul>
+  </div>
+
+  <h2>Types of CSS</h2>
+  <div class="box">
+    <ul>
+      <li><strong>Inline CSS</strong> – Applied directly inside HTML tag</li>
+      <li><strong>Internal CSS</strong> – Written inside <code>&lt;style&gt;</code> tag</li>
+      <li><strong>External CSS</strong> – Written in a separate .css file</li>
+    </ul>
+  </div>
+
+  <h2>CSS Priority Order (Very Important)</h2>
+  <div class="box">
+    <p>When multiple CSS rules target the same element, the priority is:</p>
+    <ol>
+      <li><strong>Inline CSS</strong> (Highest priority)</li>
+      <li><strong>Internal CSS</strong></li>
+      <li><strong>External CSS</strong></li>
+      <li><strong>Browser Default Styles</strong></li>
+    </ol>
+
+    <p><strong>Note:</strong> If <code>!important</code> is used, it overrides all normal rules.</p>
+  </div>
+
+  <h2>Real-Time Example</h2>
+  <div class="box">
+    <p>If a button has:</p>
+    <ul>
+      <li>External CSS → color: blue</li>
+      <li>Internal CSS → color: green</li>
+      <li>Inline CSS → color: red</li>
+    </ul>
+    <p><strong>Final color shown:</strong> Red (Inline wins)</p>
+  </div>
+
+</div>
+
+</body>
+</html>

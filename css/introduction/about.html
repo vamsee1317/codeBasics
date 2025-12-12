@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Implementation</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Internal CSS -->
+  <style>
+    .box {
+      color: green;
+      font-size: 20px;
+      border: 2px solid green;
+      padding: 15px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Implementation – Inline, Internal & External</h1>
+
+  <h2>1. Inline CSS</h2>
+  <p style="color: red; font-weight: bold;">
+    This text is styled using Inline CSS.
+  </p>
+
+  <h2>2. Internal CSS</h2>
+  <div class="box">
+    This div is styled using Internal CSS.
+  </div>
+
+  <h2>3. External CSS</h2>
+  <div class="external-box">
+    This div is styled using External CSS.
+  </div>
+
+  <h2>4. CSS Priority Demonstration</h2>
+
+  <!-- External → Internal → Inline -->
+  <div class="box external-box" style="color: red;">
+    Inline CSS wins over Internal and External CSS.
+  </div>
+
+</body>
+</html>
