@@ -1,0 +1,119 @@
+/* =====================================================
+   GLOBAL RESET & BASE STYLES
+===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+header {
+    background-color: #0f172a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* =====================================================
+   SECTION BASE STYLING
+===================================================== */
+.selector-section {
+    background-color: #ffffff;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #94a3b8;
+}
+
+.selector-section h2 {
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+/* =====================================================
+   1. DESCENDANT SELECTOR
+   Targets ALL p inside .container (any level)
+===================================================== */
+.container p {
+    background-color: #ecfeff;
+    border-left: 5px solid #06b6d4;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph outside container (not affected) */
+#descendant-section > p {
+    background-color: #fee2e2;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+/* =====================================================
+   2. CHILD SELECTOR
+   Targets ONLY direct child p of .parent
+===================================================== */
+.parent > p {
+    background-color: #dcfce7;
+    border-left: 5px solid #22c55e;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* Nested paragraph (not a direct child) */
+.child-box p {
+    background-color: #fef3c7;
+    padding: 8px;
+    border-left: 5px solid #f59e0b;
+}
+
+/* =====================================================
+   3. ADJACENT SIBLING SELECTOR
+   Targets ONLY the first p immediately after h3
+===================================================== */
+#adjacent-sibling-section h3 + p {
+    background-color: #e0f2fe;
+    border-left: 5px solid #0ea5e9;
+    padding: 8px;
+}
+
+/* Other paragraphs */
+#adjacent-sibling-section p {
+    margin-top: 8px;
+}
+
+/* =====================================================
+   4. GENERAL SIBLING SELECTOR
+   Targets ALL p siblings after h3
+===================================================== */
+#general-sibling-section h3 ~ p {
+    background-color: #f0fdf4;
+    border-left: 5px solid #16a34a;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+footer {
+    background-color: #020617;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

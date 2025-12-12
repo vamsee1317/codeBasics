@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combination Selectors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Combination Selectors Practice</h1>
+        <p>Descendant, Child, Adjacent Sibling, General Sibling</p>
+    </header>
+
+    <main>
+
+        <!-- =========================
+             1. DESCENDANT SELECTOR
+             section p
+        ========================== -->
+        <section id="descendant-section" class="selector-section">
+            <h2>1. Descendant Selector</h2>
+
+            <div class="container">
+                <p>This paragraph is inside container</p>
+
+                <div class="inner-box">
+                    <p>This paragraph is deeper inside container</p>
+                </div>
+            </div>
+
+            <p>This paragraph is outside the container</p>
+        </section>
+
+        <!-- =========================
+             2. CHILD SELECTOR
+             parent > child
+        ========================== -->
+        <section id="child-section" class="selector-section">
+            <h2>2. Child Selector</h2>
+
+            <div class="parent">
+                <p>This paragraph is a direct child</p>
+
+                <div class="child-box">
+                    <p>This paragraph is NOT a direct child</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             3. ADJACENT SIBLING SELECTOR
+             element + element
+        ========================== -->
+        <section id="adjacent-sibling-section" class="selector-section">
+            <h2>3. Adjacent Sibling Selector</h2>
+
+            <h3>Heading Before Paragraph</h3>
+            <p>This paragraph is immediately after the heading</p>
+            <p>This paragraph is NOT adjacent</p>
+            <p>This paragraph is immediately after the heading</p>
+            <p>This paragraph is NOT adjacent</p>
+        </section>
+
+        <!-- =========================
+             4. GENERAL SIBLING SELECTOR
+             element ~ element
+        ========================== -->
+        <section id="general-sibling-section" class="selector-section">
+            <h2>4. General Sibling Selector</h2>
+
+            <h3>Main Heading</h3>
+            <p>First sibling paragraph</p>
+            <p>Second sibling paragraph</p>
+            <div>Another sibling element</div>
+            <p>Third sibling paragraph</p>
+        </section>
+
+    </main>
+
+    <form action="">
+        <label for="">FirstName</label>
+        <input type="text">
+        <p></p>
+    </form>
+
+    <footer>
+        <p>&copy; 2025 CSS Learning</p>
+    </footer>
+
+
+    <script>
+
+        const p = document.createElement("p");
+        if(isValid){
+            p.className="success";
+            p.innerText = "FirstName is Valid";
+        }else{
+            p.className = "error";
+            p.innerText = "FirstName is Invalid";
+        }
+    </script>
+</body>
+</html>
