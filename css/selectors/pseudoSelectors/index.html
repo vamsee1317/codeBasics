@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Selectors Theory & Practice</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- 
+        HEADER:
+        Normal elements to demonstrate pseudo-elements later
+    -->
+    <header>
+        <h1>Pseudo Selectors in CSS</h1>
+        <p>Understanding Pseudo-Classes and Pseudo-Elements</p>
+    </header>
+
+    <main>
+
+        <!-- =========================
+             PSEUDO-CLASSES SECTION
+        ========================== -->
+        <section class="demo-section">
+            <h2>Pseudo-Classes</h2>
+
+            <!-- 
+                :hover, :active are applied here
+                These states depend on USER INTERACTION
+            -->
+            <a href="#" class="demo-link">Hover Me</a>
+            <a href="#" class="demo-link">Click Me</a>
+
+            <!-- 
+                :focus and :disabled work on form inputs
+            -->
+            <input type="text" placeholder="Focus on me">
+            <input type="text" placeholder="Disabled input" disabled>
+        </section>
+
+        <!-- =========================
+             STRUCTURAL PSEUDO-CLASSES
+        ========================== -->
+        <section class="demo-section">
+            <h2>Structural Pseudo-Classes</h2>
+
+            <!-- 
+                :first-child
+                :last-child
+                :nth-child()
+                depend on ELEMENT POSITION
+            -->
+            <ul class="item-list">
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+                <li>Fourth Item</li>
+            </ul>
+        </section>
+
+        <!-- =========================
+             PSEUDO-ELEMENTS SECTION
+        ========================== -->
+        <section class="demo-section">
+            <h2>Pseudo-Elements</h2>
+
+            <!-- 
+                ::first-letter styles only first letter
+                ::before and ::after inject content
+            -->
+            <p class="text-demo">
+                Pseudo-elements style parts of content.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CSS Learning</p>
+    </footer>
+
+</body>
+</html>
