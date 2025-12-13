@@ -1,0 +1,97 @@
+/* =====================================================
+   COMMON STYLING FOR ALL DIVS
+===================================================== */
+div {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(95, 93, 93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: larger;
+    color: white;
+    border-radius: 10px;
+}
+
+/* =====================================================
+   1. POSITION: STATIC
+   - Default position
+   - top/left/right/bottom do NOT work
+   - z-index does NOT work
+===================================================== */
+.static {
+    position: static;
+    left: 100px;   /* ❌ ignored */
+    top: 100px;    /* ❌ ignored */
+}
+
+/* =====================================================
+   2. POSITION: RELATIVE
+   - Moves relative to its original position
+   - Original space is preserved
+   - Acts as reference for absolute children
+===================================================== */
+.relative {
+    position: relative;
+    left: 130px;   /* ✅ moves right */
+    background-color: steelblue;
+}
+
+/* =====================================================
+   3. POSITION: ABSOLUTE
+   - Removed from normal document flow
+   - Positioned relative to nearest positioned ancestor
+   - If no ancestor → relative to body
+===================================================== */
+.absolute {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    background-color: crimson;
+
+    /* 
+        z-index controls vertical stacking
+        Higher value comes on top
+    */
+    z-index: 100;
+}
+
+/* =====================================================
+   4. POSITION: FIXED
+   - Positioned relative to viewport
+   - Does NOT move while scrolling
+   - Removed from document flow
+===================================================== */
+.fixed {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: green;
+    border-radius: 50%;
+
+    /* 
+        z-index higher than absolute
+        So this appears above it
+    */
+    z-index: 101;
+}
+
+/* =====================================================
+   5. POSITION: STICKY
+   - Behaves like relative initially
+   - Becomes fixed after scroll reaches top value
+   - MUST have top/left/bottom/right
+===================================================== */
+.sticky {
+    position: sticky;
+    top: 10px;
+    background-color: orange;
+}
+
+/* =====================================================
+   EXTRA BOXES FOR SCROLLING
+===================================================== */
+.box {
+    background-color: #64748b;
+}

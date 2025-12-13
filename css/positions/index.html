@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions Explained</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- 
+        STATIC POSITION
+        - Default position for all elements
+        - Follows normal document flow
+        - top / left / right / bottom DO NOT work
+    -->
+    <div class="static">
+        Static
+    </div>
+
+    <!-- 
+        RELATIVE POSITION
+        - Positioned relative to its ORIGINAL place
+        - Original space is preserved
+        - Can act as reference for absolute children
+    -->
+    <div class="relative">
+        Relative
+    </div>
+
+    <!--
+        ABSOLUTE POSITION
+        - Removed from normal document flow
+        - Positioned relative to nearest positioned ancestor
+        - If no ancestor → positioned relative to body
+    -->
+    <div class="absolute">
+        Absolute
+    </div>
+
+    <!--
+        FIXED POSITION
+        - Positioned relative to VIEWPORT
+        - Does not move while scrolling
+        - Commonly used for navbars, chat icons
+    -->
+    <section>
+        <div class="fixed">
+            Fixed
+        </div>
+    </section>
+
+    <!--
+        STICKY POSITION
+        - Hybrid of relative + fixed
+        - Acts relative until scroll reaches threshold
+        - Requires at least one offset (top/left)
+    -->
+    <div class="sticky">
+        Sticky
+    </div>
+
+    <!-- Extra boxes to create scroll -->
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+
+</body>
+</html>
